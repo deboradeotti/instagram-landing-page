@@ -1,5 +1,5 @@
 <img align="center" src="img/screenshot-browser.png">
-<img align="center" src="img/screenshot-phone.png">
+<img align="center" src="img/screenshot-phone.png"  width="300px;">
 
 <h2 class="sobre">💻 Sobre o projeto</h2>
 <p>Projeto de clone da página de login do Instagram realizado para estudo, utilizando HTML e CSS, explorando flexbox e responsividade.</p>
