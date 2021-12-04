@@ -1,0 +1,192 @@
+/* Começa zerando algumas configurações */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14 px;
+}
+
+body {
+    width: 100%;
+
+    /*
+        A medida vh é igual a 1/100 da altura da viewport (no caso, do navegador)
+    */
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+
+    /* 
+        O display flex faz com que todos os ítens dentro do container fiquem em linha, ocupando todo o espaço naquela linha
+    */
+    display: flex;
+
+    /* Alinhamento vertical */
+    align-items: center;
+
+    /* Alinhamento horizontal - start: começar da esquerda para a direita */
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: 5%;
+}
+
+.phone img {
+    height: 34rem;
+}
+
+.login {
+    display: flex;
+
+    /* 
+        Aqui, invertemos a flex direction default, de row para column, então o align-items e o justify-content também invertem 
+    */
+    flex-direction: column;
+    /* Horizontal */
+    align-items: center; 
+    /* Vertical */
+    justify-content: space-around;
+
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgrey;
+    font-size: 15px;
+}
+
+/* Seletor que pega um dos filhos daquele elemento, na ordem em que estão posicionados */
+.group:nth-child(1) {
+    min-height: 19rem;
+    margin: 0.75rem;
+}
+
+.instagram-logo {
+    height: 5rem;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    /* Para a imagem não ultrapassar a div */
+    overflow: hidden;
+}
+
+.profile-photo img {
+    height: 6.5rem;
+}
+
+.continue {
+    background-color: #0095f6;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+.logout {
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not-account {
+    color: rgb(116, 116, 116);
+    margin: 3px;
+}
+
+.link-blue {
+    color: #0095f6;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 9rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('./img/app-store.jpg');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('./img/google-play.png');
+}
+
+/*
+    Tornando a interface responsiva
+
+    Media queries 
+*/
+
+/* Tela de tablet */
+@media (max-width: 1024px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+/* Tela de celular */
+@media (max-width: 650px) {
+    body {
+        background-color: #fff;
+    }
+    .wrapper {
+        width: 90%;
+    }
+    .group {
+        border: 1px solid transparent;
+    }
+
+    /* Não mostra a parte do telefone se estiver no celular */
+    .phone {
+        display: none;
+    }
+
+    .login {
+        width: 100%;
+    }
+}
