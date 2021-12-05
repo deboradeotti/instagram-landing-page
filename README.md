@@ -1,4 +1,4 @@
-<h1>Instagram Landing Page</h1>
+<h1>🤳 Instagram Landing Page</h1>
 
 <img align="center" src="img/screenshot-browser.png">
 <img align="center" src="img/screenshot-phone.png"  width="300px;">
