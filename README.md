@@ -1,8 +1,12 @@
+<h1>Instagram Landing Page</h1>
+
 <img align="center" src="img/screenshot-browser.png">
 <img align="center" src="img/screenshot-phone.png"  width="300px;">
 
 <h2 class="sobre">💻 Sobre o projeto</h2>
 <p>Projeto de clone da página de login do Instagram realizado para estudo, utilizando HTML e CSS, explorando flexbox e responsividade.</p>
+
+[Acessar](https://deboradeotti.github.io/instagram-landing-page/)
 
 <h2 class="tecnologias">🛠️ Tecnologias</h2>
 
